@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="no-NO">
     <head> 
         <meta charset="UTF-8">
@@ -5,12 +6,12 @@
             Bli medlem
         </title>
         <style>
-            #topp {
+            .topp {
             color: black;
             text-align: center;
             }
 
-            #box {
+            .box {
             border-width: 2px;
             border-style: solid;
             border-color: white;
@@ -18,26 +19,59 @@
             color: white;
             background-color: #c4953c;
             }
+
+            .registrer {
+                padding: 16px;
+                text-align: center;
+            }
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+
+            }
+
         </style>
     </head>
     <body style="background-color: #f7bf50">
-        <div id="topp">
-            <img src="logo2.png">
+        <div class="topp">
+            <img src="logo2.png" alt="logo">
         </div><hr>
-        <nav id="topp">
+        <nav class="topp">
             | 
-            <a href="Bli medlem">Bli medlem</a> |
+            <a href="EDEL.html">Startside</a> |
+            <a href="Tjenester.html">Tjenester</a> |
+            <a href="Priser.html">Priser</a> |
+            <a href="omoss.html">Om</a> |
+            <a href="BLI_MEDLEMl.html">Bli medlem</a>
+            |
         </nav><hr>
 
-        <br>
-<br>
-<br>
-<br>
-<div id="topp">
-<h1> </h1>
-<br>
-<p style="font-size:medium;font-weight:bold;"> 
-For å bli medlem i EDEL, fyll ut boksene nedenfor</p>
+<div class="registrer">
+    <h1>Registrer deg her:</h1>
+    <p>Vennligst fyll inn informasjonen nedenfor</p>
+    <hr>
+
+    <label for="email"><b>Epost</b></label>
+    <input type="text" placeholder="Skriv inn epost" name="epost" id="epost" required>
+    <br>
+    <br>
+
+    <label for="passord"><b>Passord</b></label>
+    <input type="password" placeholder="Skriv inn passord" name="passord" id="passord" required>
+    <br>
+    <br>
+
+    <label for="psw-repeat"><b>Gjennta passord</b></label>
+    <input type="password" placeholder="Gjennta passord" name="psw-repeat" id="psw-repeat" required>
+
+
 </div>
-<br>
+
+
+
 </html>
