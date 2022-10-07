@@ -1,87 +1,50 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>   
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Om </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-    <title>  EDEL  </title>
 
-    <style>
-      .box {
-            border-width: 2px;
-            border-style: solid;
-            border-color: white;
-            padding: 1em;
-            color: white;
-            background-color: #c4953c;
+        <div id="leftMenu">
+            <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+
+            <div class="mainNav">
+                <a href="test.html">Home</a>
+                <a href="Tjenester.html">Tjenester</a>
+                <a href="Priser.html">Priser</a>
+                <a href="medlem.html">Bli medlem</a>
+                <a href="omoss.html">Om</a>
+            </div>
+        </div>
+
+
+        <span onclick="openBtn()">&#9776; Menu</span>
+
+        <div class="topp">
+            <img src="logo2.png" alt="logo">
+        </div>
+
+        <div class="content">
+            <h2>om oss</h2>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            function openBtn(){
+                document.getElementById("leftMenu").style.width = "250px";
             }
-    </style>
-    
-  </head>
-  <body>
-    <div class="topp">
-        <img src="logo2.png" alt="logo">
-    </div><hr>
-
-    <nav class="topp">
-        |
-        <a href=EDEL.html> Startside</a> |
-        <a href=Tjenester.html>Tjenester</a> |
-        <a href=Priser.html>Priser</a> |
-        <a href=omoss.html>Om</a> |
-        <a href="BLI_MEDLEMl.html">Bli medlem</a> 
-        |
-    </nav><hr>
-    
-      
-
-    
-                           <h2 style="text-align:center">Hvem er vi.. </h2>
- <p class="box">  Selskapet EDEL er en oppstartsbedrift som planlegger utlån av elektriske kjøretøy i Norge. I første 
-    omgang vil EDEL tilby lån / bruk av elektriske biler, båter og sykler. Konseptet og forretningsmodellen er 
-    basert på medlemskap, hvor hvert medlem betaler en fast årlig avgift. Som del av et medlemskap vil en 
-    få fri tilgang til alle de kjøretøy som EDEL har tilgjengelig i sin pool. Et produkt reserveres og benyttes for 
-    maksimalt 48 timer hver gang. Tjenesten skal være digital, automatisert og 100 % selvbetjent fra EDEL 
-    sin applikasjon / nettsider / digitale tjeneste.</p>
-    <h2 style="text-align:center">Smittevern:</h2>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ut, commodi sunt suscipit eum enim accusamus voluptatibus eveniet sint et odio corrupti provident repellat ratione fugit, vel optio! Distinctio, cum.
-    <h2 style="text-align:center"> Adresse:</h2>
-    <h4 style="text-align:center" > Oslo: Bjørvika</h4>
-    <h4 style="text-align:center"> Bergen: Marineholmen</h4>
-
-
-  
-    <br>
-    <br>
-    <br>
-    <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-    <hr>
-    <p style="text-align: center">
-        &copy; 2022 EDEL
-    </p>
-</body>
+            function closeBtn(){
+                document.getElementById("leftMenu").style.width = "0";
+            }
+        </script>
+    </body>
 </html>
-  
-  
-  
-  
-  
   
   
   
