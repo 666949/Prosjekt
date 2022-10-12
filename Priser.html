@@ -1,58 +1,32 @@
-    <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="no-No">
+   
     <head> 
     <meta charset="UTF-8">
-    <title>
-        EDEL - deling av elektriske kjøretøy
-    </title>
-     <style>
-        .topp {
-            color: black;
-            text-align: center;
-        }
+    <title>   Priser</title>
 
-        .box {
-            width: 200px;
-            border-width: 2px;
-            border-style: solid;
-            border-color:#f7bf50;
-            padding: 1em;
-            color: black;
-            background-color:#f7bf50;
-        }
-        .center {
-            margin-left:auto;
-            margin-right: auto;
-            text-align: center;
-        }
-        
-        table, th, td {
-            border: 2px solid;
-            background-color:black;
-            color:#f7bf50;
-            
-        }
-        ul {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-
-
-    </style>
+    
+    <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color: #f7bf50">
-        <div class="topp">
+    <body>
+        <div class="topp" >
             <img src="logo2.png" alt="logo">
         </div><hr>
 
-        <nav class="topp">
-            | <a href=EDEL.html> Startside</a> |
-            <a href=Tjenester.html>Tjenester</a> |
-            <a href=Priser.html>Priser</a> |
-            <a href=omoss.html>Om</a> |
-            <a href="BLI_MEDLEMl.html">Bli medlem</a> |
-        </nav><hr>
+        <div id="leftMenu">
+            <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+
+            <div class="mainNav">
+                <a href="test.html">Home</a>
+                <a href="tjenester1.html">Tjenester</a>
+                <a href="Priser.html">Priser</a>
+                <a href="BLI_MEDLEMl.html">Bli medlem</a>
+                <a href="omoss.html">Om</a>
+            </div>
+        </div>
+        <span onclick="openBtn()">&#9776; Menu</span>
+
+
 <div class="topp">
 <h1><u>Priser for EDEL abbonoment</u></h1>
 <p style="font-size:medium;font-weight:bold;"> 
@@ -140,11 +114,14 @@ koster per år. </p>
         Det vil koste kr per kilometer og så vil brukeren betale bompenger. <br>
  </p>
  <h2>Pris på å bruke kjøretøy ikke medlem.</h2>
-<ul class="box" style="font-size:medium;font-weight:bold;">
+
+ <span>
+<ul>
     <li>7 kr per kilometer</li>
     <li>Bompenger</li>
     <li>Ansvars forsikring</li>
     <li>60kr per time bilen er reservert</li>
+</span>
 
 </ul>
 </div>
@@ -153,5 +130,14 @@ koster per år. </p>
         <p style="text-align: center">
             &copy; 2022 EDEL
         </p>
+
+        <script>
+            function openBtn(){
+                document.getElementById("leftMenu").style.width = "250px";
+            }
+            function closeBtn(){
+                document.getElementById("leftMenu").style.width = "0";
+            }
+        </script>
+    <link rel="stylesheet" href="style.css">
     </body>
-</html>
