@@ -1,73 +1,42 @@
 <!DOCTYPE html>
 <html lang="no-NO">
 
-<!--Deling av elektriske kjøretøy
-Hvilke bilmodeller som tilbys
-Hvilke sykler som tilbys
-Hvilke båter, med motorer som tilbys
-Hvor er kjøretøyene lokalisert
-Medlemskap som tilbys
-Leiemuligheter for ikke-registrerte brukere
---> 
     <head>
     <meta charset="UTF-8">
 	<title>Tjenester</title>
-    <style>
-        .topp {
-            color: black;
-            text-align: center;
-        }
+    
 
-        .box {
-            border-width: 2px;
-            border-style: solid;
-            border-color: white;
-            padding: 1em;
-            color: white;
-            background-color: #c4953c;
-        }
-        .center {
-            margin-left:auto;
-            margin-right: auto;
-            text-align: center;
-        }   
-        table td, th, tr {
-            border: 2px solid;
-            background-color:#f7bf50;
-            color:Black;
-        }
-        ul {
-            margin-left: auto;
-            margin-right: auto;
-            text-align: left;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color: #f7bf50">
+    <body>
         <div class="topp" >
             <img src="logo2.png" alt="logo">
         </div><hr>
 
-        <nav class="topp">
-            | <a href=EDEL.html> Startside</a> |
-            <a href=Tjenester.html>Tjenester</a> |
-            <a href=Priser.html>Priser</a> |
-            <a href=omoss.html>Om</a> |
-            <a href=BLI_MEDLEMl.html>Bli medlem |</a>
-        </nav> <hr>
+        <div id="leftMenu">
+            <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+
+            <div class="mainNav">
+                <a href="test.html">Home</a>
+                <a href="tjenester1.html">Tjenester</a>
+                <a href="Priser.html">Priser</a>
+                <a href="BLI_MEDLEMl.html">Bli medlem</a>
+                <a href="omoss.html">Om</a>
+            </div>
+        </div>
+        <span onclick="openBtn()">&#9776; Menu</span>
 
         
 <div class="topp">
-<h1 style="text-align: center"><u>EDEL sine tjenester</u></h1>
+<h2><u>EDEL sine tjenester</u></h2>
 <div class="topp">
-    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, optio? Vel veritatis rerum fugiat tempore modi, eligendi adipisci eum et aspernatur error.<br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, optio? Vel veritatis rerum fugiat tempore modi, eligendi adipisci eum et aspernatur error.<br>
          Provident aliquam iste atque, sapiente dolor quaerat omnis!</p>
 </div><br>
 <h2>Kjøretøyene vi tilbyr:</h2>
 </div>
 
-<div class="topp">   
+<div>   
 <table class="center">
     <tr>
         <th>Xpeng P7</th>
@@ -112,4 +81,14 @@ Leiemuligheter for ikke-registrerte brukere
     <p style="text-align: center">
         &copy; 2022 EDEL
     </p>
+
+    <script>
+        function openBtn(){
+            document.getElementById("leftMenu").style.width = "250px";
+        }
+        function closeBtn(){
+            document.getElementById("leftMenu").style.width = "0";
+        }
+    </script>
+<link rel="stylesheet" href="style.css">
 </body>
