@@ -1,6 +1,6 @@
 body{
     font-family: Impact;
-    background-color: #f7bf50;
+    background-color: white;
 }
 #leftMenu{
     height: 100%;
@@ -95,4 +95,11 @@ div.container{
     width: 100%;
     text-align: right;
 }
+.header{
+    padding: 30px;
+    text-align: center;
+    background: #f7bf50;
+    color: #fff;
+    font-size: 30px;
 
+}
