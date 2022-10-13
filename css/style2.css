@@ -88,7 +88,29 @@ a.active, a:hover{
     }
 }
 section{
-    background: url(backgound.jpg) no-repeat;
+    background: url(../images/backgound.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
 }
+
+/* flytande knapp */
+
+.btn {
+    background-color: #c4953c;
+    color: #000;
+    text: 10px; 
+    padding: 20px 20px;
+    border-radius: 4px;
+    border-color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+
+    }
+    
+    #medlembtn {
+        position: fixed;
+        bottom: 4px;
+        right: 10px;
+    }
