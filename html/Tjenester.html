@@ -10,37 +10,43 @@
 </head>
 
 <body>
-<div class="topp" >
-    <a href="test.html"><img src="../images/logo2.png" alt="logo"></a>
-</div><hr>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <emph class="fas fa-bars"></emph>
+        </label>
+        <label class="logo"> <a href="meny2.html"><img src="../images/logo2.png" alt="logo" height="80px"></a></label>
+        <ul>
+            <li><a href="#">Heim</a></li>
+            <li><a href="#">Om</a></li>
+            <li><a href="#">Priser</a></li>
+            <li><a href="#">Tjenester</a></li>
+            <li><a href="#">Bli medlem</a></li>
+        </ul>
+    </nav>
 
-<div id="leftMenu">
-    <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
-
-<div class="mainNav">
-    <a href="../html/meny2.html">Home</a>
-    <a href="tjenester.html">Tjenester</a>
-    <a href="Priser.html">Priser</a>
-    <a href="medlem.html">Bli medlem</a>
-    <a href="omoss.html">Om</a>
-</div>
-</div>
-<span onclick="openBtn()">&#9776; Menu</span>
-
-        
-<div class="topp">
+    <div id="medlembtn">
+        <a href="medlem.html">
+        <button class="btn">
+            Du overtalte meg, <br>
+            lat meg bli medlem!
+        </button>
+        </a>
+    </div>
+<section>    
+<div>
     <h2><u>EDEL sine tjenester</u></h2>
-<div class="topp">
+<div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, optio? Vel veritatis rerum fugiat tempore modi, eligendi adipisci eum et aspernatur error.<br>
         Provident aliquam iste atque, sapiente dolor quaerat omnis!
-     </p>
+    </p>
 </div>
 <br>
     <h2>Kjøretøyene vi tilbyr:</h2>
 </div>
 
 <div>   
-<table class="center">
+<table>
     <tr>
         <th>Xpeng P7</th>
         <th>Jason Momas Elsykler</th>
@@ -80,19 +86,13 @@
     </tr>
 </table>
 </div>
+</section>
 
     <hr>
     <p style="text-align: center">
         &copy; 2022 EDEL
     </p>
 
-    <script>
-        function openBtn(){
-            document.getElementById("leftMenu").style.width = "250px";
-        }
-        function closeBtn(){
-            document.getElementById("leftMenu").style.width = "0";
-        }
-    </script>
+ 
 <link rel="stylesheet" href="../css/style2.css">
 </body>
