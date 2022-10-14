@@ -86,9 +86,13 @@ a.active, a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+    .container {
+        flex-direction: row;
+    }
    
 }
 section{
+    position: static;
     background: url(../images/backgound.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
@@ -103,7 +107,7 @@ section{
     text: 10px; 
     padding: 20px 20px;
     border-radius: 10px;
-    border-color: #fff;
+    border-color: #fff;     
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -123,8 +127,7 @@ section{
     color: #f7bf50;
     text-align: center;
     background: #000;
-    padding: 200px, 400px;
-}
+    }
 .hometxt .h1 {
     font-size: 60px;
 }
@@ -138,9 +141,11 @@ section{
 /* flip-box */
 
 .container {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    width: 1200px, auto;
-    height: 300px, auto;
+    width:  auto;
+    height: auto;
     margin: auto;
 
 }
@@ -209,6 +214,12 @@ section{
     margin: 0;
     padding: 0;
     color: #000;
+}
+
+@media (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
 }
 
 .container .box:nth-child(1) .icon{
