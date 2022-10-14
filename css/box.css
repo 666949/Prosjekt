@@ -5,8 +5,8 @@ body{
 }
 .container {
     position: relative;
-    width: 1200px;
-    height: 300px;
+    width: 1200px, auto;
+    height: 300px, auto;
     margin: auto;
 
 }
@@ -87,5 +87,11 @@ body{
     background: #f7bf50;
 }
 .container .box:nth-child(2) {
+    background: #c4953c;
+}
+.container .box:nth-child(3) .icon{
+    background: #f7bf50;
+}
+.container .box:nth-child(3) {
     background: #c4953c;
 }
