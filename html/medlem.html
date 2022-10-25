@@ -1,50 +1,16 @@
 <!DOCTYPE html>
 <html lang="no">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Medlem </title>
-        <link rel="stylesheet" href="style.css">
 
-        <style>
-            .topp {
-            color: black;
-            text-align: center;
-            }
-
-            .box {
-            border-width: 2px;
-            border-style: solid;
-            border-color: white;
-            padding: 1em;
-            color: white;
-            background-color: #c4953c;
-            }
-
-            .registrer {
-                padding: 16px;
-                text-align: center;
-            }
-
-            input[type=text], input[type=password] {
-                width: 50%;
-                padding: 15px;
-                margin: 5px 0 22px 0;
-                display: inline-block;
-                border: none;
-                background: #f1f1f1;
-
-            }
-
-        </style>
-
-    </head>
-    <body>
-
-        
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medlem </title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
         <div class="header">
+            <div class="hambrg" onclick="openBtn()">&#9776; Menu</div>
             <div id="leftMenu">
                 <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
     
@@ -55,102 +21,85 @@
                     <a href="medlem.html">Bli medlem</a>
                     <a href="omoss.html">Om</a>
                 </div>
-</div>
-<div class="header">
-        <div id="leftMenu">
-            <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
-
-            <div class="mainNav">
-                <a href="test.html">Home</a>
-                <a href="Tjenester.html">Tjenester</a>
-                <a href="Priser.html">Priser</a>
-                <a href="medlem.html">Bli medlem</a>
-                <a href="omoss.html">Om</a>
             </div>
         </div>
-
-
-        <span onclick="openBtn()">&#9776; Menu</span>
-
-        <div class="topp">
-            <a href="test.html"><img src="logo2.png" alt="logo"></a>
-        </div>
-</div>
-        
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script>
-            function openBtn(){
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function openBtn() {
+            if ($(window).width() < 768) {
+                document.getElementById("leftMenu").style.width = "100%";
+            } else {
                 document.getElementById("leftMenu").style.width = "250px";
             }
-            function closeBtn(){
-                document.getElementById("leftMenu").style.width = "0";
-            }
-        </script>
-    </body>
-</html>
-<div class="box" style="text-align: center;">
-     <h1> Registrer deg her:</h1>
-     <p>Vennligst fyll inn informasjonen nedenfor</p>
-</div>     
+        }
+        function closeBtn() {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+
+    </script>
+</body>
+
+<div class="registrer">
+    <h1> Registrer deg her:</h1>
+    <p>Vennligst fyll inn informasjonen nedenfor</p>
+</div>
 
 <div class="Registrer" style="text-align:center">
     <label for="epost"><b>Epost<b></label>
     <br>
-    <input type="text" placeholder="Skriv inn epost" name="epost" id="epost" requierd style="text-align: center;">
+    <input 
+    type="text" 
+    placeholder="Skriv inn epost" 
+    name="epost" 
+    id="epost" 
+    requierd 
+    style="text-align: center;">
     <br>
     <br>
 
     <label for="passord"><b>Passord<b></label>
     <br>
-    <input type="password" placeholder="Skriv inn passord" name="password" id="password" requierd style="text-align: center;">
+    <input 
+    type="password" 
+    placeholder="Skriv inn passord" 
+    name="password" 
+    id="password" 
+    requierd 
+    style="text-align: center;">
     <br>
     <br>
 
     <label for="psw-repeat"><b>Gjennta passord</b></label>
     <br>
-    <input type="password" placeholder="Gjennta passord" name="password" id="password" requierd style="text-align:center;">
-
-
+    <input 
+    type="password" 
+    placeholder="Gjennta passord" 
+    name="password" 
+    id="password" 
+    requierd
+    style="text-align:center;">
     <form>
         <label for="medlemskap"><b>Velg medlemskap:</b></label>
-        <br>
-    <select>id="medlemskap" name="medlemskap" size="1" >
-        <option value="bil">Bil og sykkel</option>
-        <option value="båt">Båt</option>
-        <option value="premium">Premium</option>
-    </select><br><br>
-    </form> 
-    
+        <br><br>
+        <select>id="medlemskap" name="medlemskap" size="1" >
+            <option value="bil">Bil og sykkel</option>
+            <option value="båt">Båt</option>
+            <option value="premium">Premium</option>
+        </select><br><br>
+    </form>
     <input type="submit" value="Bekreft medlemskap" style="width: 150px; height: 50px;">
-
-
-     
-  <button id="myBtn" type="button" style="background-color:#f1f1f1; color:black; width:150px; height: 50px; border: radius 5px;" >Registrer deg </button>
+    <button id="myBtn" type="button"
+        style="background-color:#f1f1f1; color:black; width:150px; height: 50px; border: radius 5px;">Registrer deg
+    </button>
     <script>
         const myBtn = document.getElementById("myBtn");
-         myBtn.addEventListener("click",function(e) {
-            document.body.innerHTML="<h1>Velkommen!"
-
+        myBtn.addEventListener("click", function (e) {
+            document.body.innerHTML = "<h1>Velkommen!"
         });
-
     </script>
-
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-<hr>
-<p style="text-align: center">
+<footer class="footer">
     &copy; 2022 EDEL
-</p>
-    </body>
-
+</footer>
+</body>
 </html>

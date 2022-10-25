@@ -5,6 +5,8 @@ body {
     padding: 0px;
 }
 
+/* innhold i dokumentet */
+
 .wrapper{
     width: 100%;
 }
@@ -65,6 +67,8 @@ body {
     font-size: 30px;
 }
 
+/* resoponsiv til tablet */
+
 @media only screen and (min-width: 768px) {
    .wrapper {
     width: 600px;
@@ -83,6 +87,8 @@ body {
     padding-top: 30px;
 }
 }
+
+/* responsiv til nettside */
 
 @media only screen and (min-width: 1000px) {
     .wrapper{
@@ -105,6 +111,8 @@ body {
         float: left;
     }
  }
+
+/* meny trekkspel */
 
 #leftMenu {
     height: 100%;
@@ -150,6 +158,8 @@ body {
     font-size: 40px;
 }
 
+/* hamburger */
+
 .hambrg {
     position: absolute;
     right: 90px;
@@ -160,9 +170,13 @@ body {
     color: #000;
 }
 
+/* text, sentrering */
+
 .topp {
     text-align: center;
 }
+
+/* meny trekt ut */ 
 
 table td,
 th,
@@ -193,6 +207,7 @@ ul.myUL {
     text-align: left;
 }
 
+/* flytande medklemsknapp */ 
 
 .knapp {
     background-color: #f7bf50;
@@ -206,4 +221,21 @@ ul.myUL {
     position: fixed;
     bottom: 4px;
     right: 10px;
+}
+
+/* medlemside */
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+}
+
+.registrer {
+    padding: 16px;
+    text-align: center;
 }
