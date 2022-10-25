@@ -143,14 +143,5 @@ div.container {
 @media (max-width: 400px) {
     .topp {
         display: none;
-    }
-    .header{
-        min-width: 516px;
-        text-align: center;
-    }
-    .btn-area{
-        position: center;
-    }
-    
-   
+    } 
 }
