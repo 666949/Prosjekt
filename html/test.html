@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="no">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Test sidemeny </title>
-        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
 
-<div class="header">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Test sidemeny </title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
         <div id="leftMenu">
             <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
 
@@ -27,33 +29,41 @@
         <span onclick="openBtn()">&#9776; Menu</span>
 
         <div class="topp">
-            <a href="test.html"><img src="logo2.png" alt="logo"></a>
+            <a href="test.html"><img src="../images/logo2.png" alt="logo"></a>
         </div>
-</div>
-        <div class="content">
-            <h2>Her finner du våre utlånssteder!</h2>
-            <h2>Oslo</h2> <a href="https://www.google.com/maps/place/Bj%C3%B8rvika,+Oslo/@59.902864,10.7479348,15z/data=!3m1!4b1!4m5!3m4!1s0x46416e8b1c3f6887:0xb44a016cb3c9d23a!8m2!3d59.9068141!4d10.7619315" target="_blank"><img src="g-maps2-removebg-preview.png" alt="google maps"></a> 
-            <h2>Bergen</h2> <a href="https://www.google.com/maps/search/Marinehomen'/@60.3808779,5.3268946,16.81z" target="_blank"> <img src="g-maps2-removebg-preview.png" alt="google maps"></a>
-        </div>
+    </div>
+    <div class="content">
+        <h2>Her finner du våre utlånssteder!</h2>
+        <h2>Oslo</h2> <a
+            href="https://www.google.com/maps/place/Bj%C3%B8rvika,+Oslo/@59.902864,10.7479348,15z/data=!3m1!4b1!4m5!3m4!1s0x46416e8b1c3f6887:0xb44a016cb3c9d23a!8m2!3d59.9068141!4d10.7619315"
+            target="_blank"><img src="../images/g-maps2-removebg-preview.png" alt="google maps"></a>
+        <h2>Bergen</h2> <a href="https://www.google.com/maps/search/Marinehomen'/@60.3808779,5.3268946,16.81z"
+            target="_blank"> <img src="../images/g-maps2-removebg-preview.png" alt="google maps"></a>
+    </div>
 
-        <div id="medlemknapp">
-            <button class="knapp"> Bli medlem!</button>
-        </div>
+    <div id="medlemknapp">
+        <button class="knapp"> Bli medlem!</button>
+    </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script>
-            function openBtn(){
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function openBtn() {
+            if ($(window).width() < 400) {
+                document.getElementById("leftMenu").style.width = "100%";
+            }else {
                 document.getElementById("leftMenu").style.width = "250px";
             }
-            function closeBtn(){
-                document.getElementById("leftMenu").style.width = "0";
-            }
+        }
+        function closeBtn() {
+            document.getElementById("leftMenu").style.width = "0";
+        }
 
-        </script>
+    </script>
 
-<footer class="footer">
-    &copy; 2022 EDEL
-</footer>
+    <footer class="footer">
+        &copy; 2022 EDEL
+    </footer>
 
-    </body>
+</body>
+
 </html>

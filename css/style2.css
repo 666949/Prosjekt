@@ -13,9 +13,15 @@ nav {
     height: 80px;
     width: 100%;
 }
-label.logo{
-   
+.logo{
+
 }
+@media (max-width: 390px){
+    .logo {
+        display: none;
+    }
+}
+
 nav ul{
     float: right;
     margin-right: 20px;
@@ -222,7 +228,7 @@ section{
 @media (max-width: 800px) {
     .container{
         flex-direction: column;
-        top: ;
+
     }
 }
 
@@ -243,4 +249,9 @@ section{
 }
 .container .box:nth-child(3) {
     background: #c4953c;
+}
+
+@media (max-width: 850px) {
+    .container .box {
+        position: absolute;
 }

@@ -1,8 +1,9 @@
-body{
+body {
     font-family: Impact;
     background-color: white;
 }
-#leftMenu{
+
+#leftMenu {
     height: 100%;
     position: fixed;
     width: 0;
@@ -14,43 +15,52 @@ body{
     transition: 0.5s;
     padding-top: 60px;
 }
-.mainNav{
+
+
+.mainNav {
     margin-top: 70px;
 }
-.mainNav a{
+
+.mainNav a {
     margin-bottom: 15px;
 }
-.content{
+
+.content {
     display: grid;
     place-items: center;
     height: 100vh;
 }
-.content h2{
+
+.content h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 70px;
 }
-#leftMenu a{
+
+#leftMenu a {
     padding: 8px 8px 8px 10px;
     text-decoration: none;
     font-size: 25px;
-    color: #fff;
+    color: #f7bf50;          /*             <----  farge på tekst i trekkspillmenyen */
     display: block;
     transition: 0.4s;
     text-align: center;
     text-transform: uppercase;
 }
-#leftMenu a:hover{
+
+#leftMenu a:hover {
     color: #fff;
     background: #f7bf50;
 }
-#leftMenu .btn-area{
+
+#leftMenu .btn-area {
     position: absolute;
     top: 0;
     right: 15px;
     font-size: 40px;
 }
-span{
+
+span {
     position: absolute;
     right: 90px;
     top: 30px;
@@ -60,56 +70,68 @@ span{
     color: #000;
 }
 
-  .topp{
+.topp {
     text-align: center;
-  }
-table td, th, tr {
-    border: 2px solid;
-    background-color:#f7bf50;
-    color:Black;
 }
+
+table td,
+th,
+tr {
+    border: 2px solid;
+    background-color: #f7bf50;
+    color: Black;
+}
+
 ul {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
 }
+
 .center {
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
-}  
-.topp{
+}
+
+.topp {
     text-align: center;
 }
+
 ul.myUL {
     display: inline-block;
     text-align: left;
-  }
-div.container{
+}
+
+div.container {
     text-align: center;
 }
-.footer{
+
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: left;
 }
-.header{
-    padding: 30px;
+
+.header {
+    padding: 40px;
+    width: 100%;
     text-align: center;
     background: #f7bf50;
-    color: #fff;
     font-size: 30px;
 
+
 }
+
 .knapp {
-background-color: #f7bf50;
-color: #000;
-text: 10px; 
-padding: 20px 40px;
-border-radius: 4px;
-border-color: #fff;
+    background-color: #f7bf50;
+    color: #000;
+    text: 10px;
+    padding: 20px 40px;
+    border-radius: 4px;
+    border-color: #fff;
 }
 
 #medlemknapp {
@@ -118,7 +140,9 @@ border-color: #fff;
     right: 10px;
 }
 
-
-/* ny meny-css */
-/* start */
-
+@media (max-width: 400px) {
+    .topp {
+        display: none;
+    }
+   
+}
