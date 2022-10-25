@@ -11,6 +11,11 @@ body {
     width: 100%;
 }
 
+.info{
+    text-align: center;
+
+}
+
 .img-info{
     width: 100%;
 }
@@ -204,8 +209,8 @@ body {
 
 .hambrg {
     position: absolute;
-    right: 90px;
-    top: 30px;
+    right: 10px;
+    top: 20px;
     font-size: 30px;
     transition: 0.4s;
     cursor: pointer;
