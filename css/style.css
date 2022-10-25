@@ -193,3 +193,24 @@ ul.myUL {
     text-align: left;
 }
 
+
+.knapp {
+    background-color: #f7bf50;
+    color: #000;
+    text: 10px;
+    padding: 20px 40px;
+    border-radius: 4px;
+    border-color: #fff;
+}
+
+#medlemknapp {
+    position: fixed;
+    bottom: 4px;
+    right: 10px;
+}
+
+@media (max-width: 400px) {
+    .topp {
+        display: none;
+    } 
+}
