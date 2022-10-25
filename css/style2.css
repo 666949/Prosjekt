@@ -113,8 +113,11 @@ section{
     font-weight: bold;
     cursor: pointer;
 }
-.btn:hover {
-
+@media (max-width: 800px) {
+    .btn {
+        position: absolute;
+    }
+    
 }
     
 #medlembtn {
@@ -219,6 +222,7 @@ section{
 @media (max-width: 800px) {
     .container{
         flex-direction: column;
+        top: ;
     }
 }
 
