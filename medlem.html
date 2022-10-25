@@ -6,10 +6,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Medlem </title>
         <link rel="stylesheet" href="style.css">
+
+        <style>
+            .topp {
+            color: black;
+            text-align: center;
+            }
+
+            .box {
+            border-width: 2px;
+            border-style: solid;
+            border-color: white;
+            padding: 1em;
+            color: white;
+            background-color: #c4953c;
+            }
+
+            .registrer {
+                padding: 16px;
+                text-align: center;
+            }
+
+            input[type=text], input[type=password] {
+                width: 50%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+
+            }
+
+        </style>
+
     </head>
     <body>
 
+        
 
+        <div class="header">
+            <div id="leftMenu">
+                <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+    
+                <div class="mainNav">
+                    <a href="test.html">Home</a>
+                    <a href="Tjenester.html">Tjenester</a>
+                    <a href="Priser.html">Priser</a>
+                    <a href="medlem.html">Bli medlem</a>
+                    <a href="omoss.html">Om</a>
+                </div>
+</div>
+<div class="header">
         <div id="leftMenu">
             <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
 
@@ -23,12 +70,12 @@
         </div>
 
 
-    <span onclick="openBtn()">&#9776; Menu</span>
+        <span onclick="openBtn()">&#9776; Menu</span>
 
-        
         <div class="topp">
             <a href="test.html"><img src="logo2.png" alt="logo"></a>
         </div>
+</div>
         
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -47,7 +94,7 @@
      <p>Vennligst fyll inn informasjonen nedenfor</p>
 </div>     
 
-<div class="Registrer">
+<div class="Registrer" style="text-align:center">
     <label for="epost"><b>Epost<b></label>
     <br>
     <input type="text" placeholder="Skriv inn epost" name="epost" id="epost" requierd style="text-align: center;">
@@ -56,21 +103,54 @@
 
     <label for="passord"><b>Passord<b></label>
     <br>
-    <input type="passord" placeholder="Skriv inn passord" name="passord" id="passord" requierd style="text-align: center;">
+    <input type="password" placeholder="Skriv inn passord" name="password" id="password" requierd style="text-align: center;">
     <br>
     <br>
 
     <label for="psw-repeat"><b>Gjennta passord</b></label>
     <br>
-    <input type="passord" placeholder="Gjennta passord" name="passord" id="passord" requierd style="text-align:center;">
+    <input type="password" placeholder="Gjennta passord" name="password" id="password" requierd style="text-align:center;">
 
 
     <form>
         <label for="medlemskap"><b>Velg medlemskap:</b></label>
         <br>
-    <select> id=</select>
+    <select>id="medlemskap" name="medlemskap" size="1" >
+        <option value="bil">Bil og sykkel</option>
+        <option value="båt">Båt</option>
+        <option value="premium">Premium</option>
+    </select><br><br>
+    </form> 
+    
+    <input type="submit" value="Bekreft medlemskap" style="width: 150px; height: 50px;">
 
 
-    </form>
+     
+  <button id="myBtn" type="button" style="background-color:#f1f1f1; color:black; width:150px; height: 50px; border: radius 5px;" >Registrer deg </button>
+    <script>
+        const myBtn = document.getElementById("myBtn");
+         myBtn.addEventListener("click",function(e) {
+            document.body.innerHTML="<h1>Velkommen!"
+
+        });
+
+    </script>
 
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<hr>
+<p style="text-align: center">
+    &copy; 2022 EDEL
+</p>
+    </body>
+
+</html>
