@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Hjem </title>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/lib/w3.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <script src="https://kit.fontawesome.com/60e24d564a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <div class="header">
-        <a href="test.html"><img src="../images/logo2_50.png" alt="logo"></a>
+        <a href="test.html"><img src="../images/logo2_50.png" alt="EDEL"></a>
         <div class="hambrg" onclick="openBtn()">&#9776; Menu</div>
         <div id="leftMenu">
             <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
@@ -31,7 +31,7 @@
 
     <div class="wrapper">
         <article class="info">
-            <h2> HEI! </h2>
+            <h1> HEI! </h1>
             <p> Vi er EDEL. En ny og moderne måte å dele elektriske biler, båter og sykler<br>
             Vil du dele oss?<br>
         </article>
@@ -65,6 +65,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <script>
         function openBtn() {
             if ($(window).width() < 768) {
@@ -76,7 +77,6 @@
         function closeBtn() {
             document.getElementById("leftMenu").style.width = "0";
         }
-
     </script>
     <footer class="footer">
         &copy; 2022 EDEL
