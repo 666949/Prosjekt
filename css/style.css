@@ -11,9 +11,26 @@ body {
     width: 100%;
 }
 
-.info{
-    text-align: center;
+.info {
+    background: #f7bf50;
+}
 
+.info h2{
+    text-align: center;
+    padding: 30px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #111;
+    line-height: 44px;
+}
+
+.info p{
+    text-align: center;
+    padding: 0px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
 }
 
 .img-info{
@@ -223,8 +240,9 @@ body {
     text-align: center;
 }
 
-/* meny trekt ut */ 
+/* tabell */ 
 
+/*
 table td,
 th,
 tr {
@@ -232,6 +250,7 @@ tr {
     background-color: #f7bf50;
     color: Black;
 }
+*/
 
 ul {
     margin-left: auto;
@@ -243,10 +262,6 @@ ul {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-.topp {
-    text-align: left;
 }
 
 ul.myUL {
@@ -262,6 +277,7 @@ ul.myUL {
     padding: 20px 40px;
     border-radius: 4px;
     border-color: #fff;
+    cursor: pointer;
 }
 
 #medlemknapp {
