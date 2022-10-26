@@ -101,6 +101,11 @@ body {
     font-size: 30px;
 }
 
+.header img{
+    display: none;
+    cursor: pointer;
+}
+
 /* resoponsiv til tablet */
 
 @media only screen and (min-width: 768px) {
@@ -111,7 +116,7 @@ body {
 
    .img-info h2{
     padding: 20px 0px 0px;
-}
+    }
 
     .img-info-osl h2 {
     padding: 20px 0px 0px;
@@ -119,7 +124,7 @@ body {
 
     .img-info p{
     padding: 20px 0px 0px;
-}
+    }
 
     .img-info-osl p{
     padding: 20px 0px 0px;
@@ -127,9 +132,15 @@ body {
 
     .img-bgo{
     padding-top: 30px;
-}
+    }
     .img-osl{
     padding-top: 30px;
+    }
+
+    .header img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
