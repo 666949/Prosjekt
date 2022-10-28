@@ -104,11 +104,13 @@ body {
 /* header */
 
 .header {
+    position: relative;
     width: 100%;
-    top: 0;
+    top: -20px;
     padding: 40px;
     background: #f7bf50;
     font-size: 30px;
+    border-radius: 20px;
 }
 
 .header img{
@@ -298,7 +300,7 @@ ul.myUL {
     background-color: #f7bf50;
     color: #000;
     padding: 20px 40px;
-    border-radius: 4px;
+    border-radius: 100px;
     border-color: #fff;
     cursor: pointer;
 }
