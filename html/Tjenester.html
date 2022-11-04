@@ -12,6 +12,7 @@
 <body>
     <link rel="stylesheet" href="../css/style.css">
     <div class="header">
+        <div class="hambrg" onclick="openBtn()">&#9776; Menu</div>
         <div id="leftMenu">
             <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
 
@@ -24,7 +25,7 @@
             </div>
         </div>
 
-        <span onclick="openBtn()">&#9776; Menu</span>
+        
 
         <div class="topp">
             <a href="test.html"><img src="../images/logo2.png" alt="logo"></a>
@@ -62,6 +63,7 @@
         </td>
     </tr>
 </table>
+
 <table>
     <tr>
         <th colspan="10px;">Jason Momas Elsykler</th>
@@ -80,6 +82,7 @@
         </td>
     </tr>
 </table>
+
 <table>
     <tr>
     <th colspan="10px;">Jason Momas Elsykler</th>    
@@ -100,6 +103,21 @@
 </table>
 </div>
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function openBtn() {
+            if ($(window).width() < 768) {
+                document.getElementById("leftMenu").style.width = "100%";
+            } else {
+                document.getElementById("leftMenu").style.width = "250px";
+            }
+        }
+        function closeBtn() {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+
+    </script>
 
     <hr>
     <p style="text-align: center">

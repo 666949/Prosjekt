@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tjenester </title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/60e24d564a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="test.html"><img src="../images/logo2_50.png" alt="EDEL"></a>
+        <div class="hambrg" onclick="openBtn()">&#9776; Menu</div>
+        <div id="leftMenu">
+            <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+
+            <div class="mainNav">
+                <a href="test.html">Heim</a>
+                <a href="t2.html">Tjenester</a>
+                <a href="p2.html">Priser</a>
+                <a href="medlem.html">Bli medlem</a>
+                <a href="omoss.html">Om</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <article class="info">
+            <h1>Tjenester</h1> 
+        </article>
+
+        <article class="img-info">
+        <h2> Xpeng P7 </h2>
+                    <ul>
+                        <li>All wheel drive</li>
+                        <li>Rekkevidde: 706km</li>
+                        <li>Mer informasjon om bilen finner du <a href="https://heyxpeng.com/p7?prentId=1">her</a></li>
+                    </ul>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa iure beatae assumenda velit.
+                        Perferendis, nihil laborum aut atque ipsam placeat! Voluptas unde sed exercitationem soluta debitis
+                        sunt, odit labore.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+        </article>
+        <img class="img-bgo" src="../images/xpeng1.png" alt="Xpeng">
+
+        <article class="img-info-osl">
+        <h2> Hydrolift </h2>
+                    <ul>
+                        <li>Lengde: 6,68 meter</li>
+                        <li>Bredde: 2,30 meter</li>
+                        <li>Maks fart: 40 kn</li>
+                        <li>Mer informasjon om båten finner du <a href="https://hydrolift.com/e-22/?lang=no">her.</a></li>
+                    </ul>
+                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni eaque amet illo perspiciatis
+                        iusto temporibus eos. In perferendis totam doloribus minus harum, voluptates incidunt veniam unde sint
+                        voluptatum facere.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                   
+        </article>
+       
+        <img class="img-osl" src="../images/Hydrolift1.png" alt="Hydrolift">
+
+        <article class="img-info">
+            <h2> Jason Momas  </h2>
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Norges mest solgte elsykkel.</li>
+                                <li>Jason momas er en terrengsykkel med elmotor. Beregnet på vei, terreng og sti. </li>
+                                <li>Sykkelen har et samsung 36V, 14ah batteri med en rekkevidde opp til 100km.</li>
+                                <li>50 Nm.</li>
+                                <li>Hydrauliske skivebremser.</li>
+                                <li>Mer informasjon om sykkelen finner du <a href="https://www.e-wheels.no/elsykkel/momas-jason/?gclid=Cj0KCQjw852XBhC6ARIsAJsFPN0Bc0clfAuVs_g0uYLPwe4_WbWW-eHTU5OfIt8WpmS0rTn4Nq_8HvgaAu9iEALw_wcB">her.</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa iure beatae assumenda velit.
+                                Perferendis, nihil laborum aut atque ipsam placeat! Voluptas unde sed exercitationem soluta debitis
+                                sunt, odit labore.
+                            </p>
+                        </td>
+                    </tr>
+            </table>
+        </article>
+        <img class="img-bgo" src="../images/Jasson2.jfif" alt="Jason Momas">
+
+    </div>
+
+    <div id="medlemknapp">
+        <form action="medlem.html" method="get">
+            <button class="knapp"> Bli medlem! </button> 
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function openBtn() {
+            if ($(window).width() < 768) {
+                document.getElementById("leftMenu").style.width = "100%";
+            } else {
+                document.getElementById("leftMenu").style.width = "250px";
+            }
+        }
+        function closeBtn() {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+
+    </script>
+
+    <footer class="footer">
+        &copy; 2022 EDEL
+    </footer>
+
+</body>
+
+</html>

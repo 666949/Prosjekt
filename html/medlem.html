@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Medlem </title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 <body>
         <div class="header">
+            <a href="test.html"><img src="../images/logo2_50.png" alt="EDEL"></a>
             <div class="hambrg" onclick="openBtn()">&#9776; Menu</div>
             <div id="leftMenu">
                 <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
     
                 <div class="mainNav">
-                    <a href="test.html">Home</a>
-                    <a href="Tjenester.html">Tjenester</a>
-                    <a href="Priser.html">Priser</a>
+                    <a href="test.html">Heim</a>
+                    <a href="t2.html">Tjenester</a>
+                    <a href="p2.html">Priser</a>
                     <a href="medlem.html">Bli medlem</a>
                     <a href="omoss.html">Om</a>
                 </div>
@@ -37,7 +38,7 @@
         }
 
     </script>
-</body>
+
 
 <div class="registrer">
     <h1> Registrer deg her:</h1>
@@ -45,26 +46,24 @@
 </div>
 
 <div class="Registrer" style="text-align:center">
-    <label for="epost"><b>Epost<b></label>
+    <label for="epost"><b>Epost</b></label>
     <br>
     <input 
     type="text" 
     placeholder="Skriv inn epost" 
     name="epost" 
     id="epost" 
-    requierd 
     style="text-align: center;">
     <br>
     <br>
 
-    <label for="passord"><b>Passord<b></label>
+    <label for="password"><b>Passord</b></label>
     <br>
     <input 
     type="password" 
     placeholder="Skriv inn passord" 
     name="password" 
-    id="password" 
-    requierd 
+    id="password"  
     style="text-align: center;">
     <br>
     <br>
@@ -75,22 +74,18 @@
     type="password" 
     placeholder="Gjennta passord" 
     name="password" 
-    id="password" 
-    requierd
+    id="psw-repeat" 
     style="text-align:center;">
     <form>
         <label for="medlemskap"><b>Velg medlemskap:</b></label>
         <br><br>
-        <select>id="medlemskap" name="medlemskap" size="1" >
+        <select id="medlemskap" name="medlemskap" size="1" >
             <option value="bil">Bil og sykkel</option>
             <option value="båt">Båt</option>
             <option value="premium">Premium</option>
         </select><br><br>
     </form>
-    <input type="submit" value="Bekreft medlemskap" style="width: 150px; height: 50px;">
-    <button id="myBtn" type="button"
-        style="background-color:#f1f1f1; color:black; width:150px; height: 50px; border: radius 5px;">Registrer deg
-    </button>
+    <button id="myBtn" type="button"> Bekreft medlemskap </button>
     <script>
         const myBtn = document.getElementById("myBtn");
         myBtn.addEventListener("click", function (e) {

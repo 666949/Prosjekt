@@ -3,25 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Test sidemeny </title>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
-    <link rel="stylesheet" href="../css/style.css">
+    <title> Hjem </title>
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="https://kit.fontawesome.com/60e24d564a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <div class="header">
+        <a href="test.html"><img src="../images/logo2_50.png" alt="EDEL"></a>
         <div class="hambrg" onclick="openBtn()">&#9776; Menu</div>
         <div id="leftMenu">
             <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
 
             <div class="mainNav">
-                <a href="test.html">Home</a>
-                <a href="Tjenester.html">Tjenester</a>
-                <a href="Priser.html">Priser</a>
+                <a href="test.html">Heim</a>
+                <a href="t2.html">Tjenester</a>
+                <a href="p2.html">Priser</a>
                 <a href="medlem.html">Bli medlem</a>
                 <a href="omoss.html">Om</a>
             </div>
@@ -30,12 +31,9 @@
 
     <div class="wrapper">
         <article class="info">
-            <h1> HEI </h1>
-            <p> Vi er EDEL. En ny og moderne måte å dele elektriske biler <i class="fa-duotone fa-car"></i>, 
-                båter <i class="fa-duotone fa-sailboat"></i> og 
-                sykler<i class="fa-duotone fa-bicycle"></i></p>
-            <p> Vil du dele oss?</p>
-            <p> Her er vi: </p>
+            <h1> HEI! </h1>
+            <p> Vi er EDEL. En ny og moderne måte å dele elektriske biler, båter og sykler<br>
+                Vil du dele oss?<br>
         </article>
 
         <article class="img-info">
@@ -43,9 +41,10 @@
             <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non excepturi beatae fugiat ipsum eum sit
                 nulla sed libero saepe. Dolorum nulla odit ex quis eligendi totam corrupti at necessitatibus aliquam!
             </p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa iure beatae assumenda velit.
-                Perferendis, nihil laborum aut atque ipsam placeat! Voluptas unde sed exercitationem soluta debitis
-                sunt, odit labore.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.9034415207893!2d5.324829115949522!3d60.38075493331798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cf986d03445e5%3A0x9fd8093bd531901!2sMarineholmen%20Gjestebrygge!5e0!3m2!1sno!2sno!4v1666870190307!5m2!1sno!2sno"
+                width="500" height="130" style="border:0; padding-left: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
         <img class="img-bgo" src="../images/bgo.jpg" alt="bergen">
 
@@ -54,19 +53,26 @@
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis quo eos cupiditate deserunt porro,
                 fugiat molestias reiciendis nam nisi! Accusamus animi, sed eaque laborum dignissimos delectus ipsum
                 dolores vel.</p>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni eaque amet illo perspiciatis
-                iusto temporibus eos. In perferendis totam doloribus minus harum, voluptates incidunt veniam unde sint
-                voluptatum facere.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8003.056723742556!2d10.747934845603059!3d59.90286402016485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8b1c3f6887%3A0xb44a016cb3c9d23a!2zQmrDuHJ2aWthLCBPc2xv!5e0!3m2!1sno!2sno!4v1666870400169!5m2!1sno!2sno"
+                width="500" height="130" style="border:0; padding-right: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
+        <br>
+        <br>
+        <br>
         <img class="img-osl" src="../images/bkgfgg8qxd.jpeg" alt="oslo">
 
     </div>
 
     <div id="medlemknapp">
-        <a href="medlem.html"> <button class="knapp"> Bli medlem!</button></a>
+        <form action="medlem.html" method="get">
+            <button class="knapp"> Bli medlem! </button>
+        </form>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script>
         function openBtn() {
             if ($(window).width() < 768) {
@@ -78,9 +84,7 @@
         function closeBtn() {
             document.getElementById("leftMenu").style.width = "0";
         }
-
     </script>
-
     <footer class="footer">
         &copy; 2022 EDEL
     </footer>

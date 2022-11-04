@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pris </title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/60e24d564a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="test.html"><img src="../images/logo2_50.png" alt="EDEL"></a>
+        <div class="hambrg" onclick="openBtn()">&#9776; Menu</div>
+        <div id="leftMenu">
+            <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+
+            <div class="mainNav">
+                <a href="test.html">Heim</a>
+                <a href="t2.html">Tjenester</a>
+                <a href="p2.html">Priser</a>
+                <a href="medlem.html">Bli medlem</a>
+                <a href="omoss.html">Om</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <article class="info">
+
+            <h1>Priser og abonoment med EDEL</h1>
+            <p>
+                Prisene til Edel er årlige priser og har forøyblikket 3 tilbud. I tabellen nedafor <br>
+                får man se hvilken av tjenestene de 3 tilbudene inkluderer og hvor mye det <br>
+                koster per år. </p>
+
+        </article>
+
+        <article class="img-info">
+            <h2> Basis </h2>
+
+            <p>Med basis-abenoment vil du få fri tilgang til vår bilpark og sykkelpark.
+                Om du velger basis+ vil du i tillegg få tilgang til vår båthavn. 
+                <br>
+                
+                Prisene er ink. mva.
+            </p>
+
+            <table>
+                <tr>
+                    <td></td>
+                    <th> 10 000 kr </th>
+                    <th> 15 000 kr </th>
+                    <th> 20 000 kr </th>
+                </tr>
+                <tr>
+                    <th>Bil</th>
+                    <td>&#10003;</td>
+                    <td>-</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <th>Sykkel</th>
+                    <td>&#10003;</td>
+                    <td>-</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <th>Båt</th>
+                    <td>-</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                </tr>
+            </table>
+        </article>
+        <img class="img-bgo" src="../images/averie-woodard-5d20kdvFCfA-unsplash.jpg" alt="Dame i bil med hodet ut av vindu">
+
+        <article class="img-info-osl">
+            <h2> Premium </h2>
+            <p> Edel tilbyr også et premium abonoment, det vil inkludere alle elementa du får i basis+ og meir!
+                For en litt høgaresum får du meir for pengane. Mindre egenandel ved skade på kjøretøy,
+                Reservere via edel kjøretøy i edel appen og mulighet for å låne kjøretøyet lengre en 48 timer!
+                <br>
+                <br>
+                <br>
+                <br></p>
+            <ul>
+                <li>Pris: 25 000kr </li>
+                <li>Lengre lån av Kjøretøy</li>
+                <li>Reservere Kjøretøy</li>
+                <li>Alle fordelane til Basis+</li>
+            </ul>
+
+        </article>
+        <img class="img-osl" src="../images/les-anderson-9bpwQIKnJYY-unsplash.jpg" alt="Familie på båttur">
+
+        
+        <article class="img-info">
+           
+            <h2> Uten </h2>
+            <p> En person kan bruke Edel sine kjøretøy uten å være medlem. <br>
+                Så lenge personen har lastet ned og registert seg i Edel-Appen.<br>
+                Det vil koste kr per kilometer og så vil brukeren betale bompenger.<br>
+                </p>
+            <ul>
+                <li>12kr Per Kilometer </li>
+                <li>Bompenger</li>
+                <li>Ansvars Forsikring</li>
+                <li>60kr+ per time bilen er i bruk</li>
+            </ul>
+        </article>
+        <img class="img-bgo" src="../images/everton-vila-AsahNlC0VhQ-unsplash.jpg" alt="Venner på sykkeltur">
+    </div>
+
+    <div id="medlemknapp">
+        <form action="medlem.html" method="get">
+            <button class="knapp"> Bli medlem! </button> 
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function openBtn() {
+            if ($(window).width() < 768) {
+                document.getElementById("leftMenu").style.width = "100%";
+            } else {
+                document.getElementById("leftMenu").style.width = "250px";
+            }
+        }
+        function closeBtn() {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+
+    </script>
+
+    <footer class="footer">
+        &copy; 2022 EDEL
+    </footer>
+
+</body>
+
+</html>

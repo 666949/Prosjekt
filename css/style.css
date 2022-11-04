@@ -11,9 +11,36 @@ body {
     width: 100%;
 }
 
-.info{
-    text-align: center;
+.info {
+    background: #f7bf50;
+    border-radius: 20px;
+}
 
+.info h1{
+    text-align: center;
+    padding: 30px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #111;
+    line-height: 44px;
+}
+
+.info h2{
+    text-align: center;
+    padding: 30px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #111;
+    line-height: 44px;
+}
+
+.info p{
+    text-align: center;
+    padding: 0px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
 }
 
 .img-info{
@@ -77,11 +104,17 @@ body {
 /* header */
 
 .header {
-    width: 100%;
-    top: 0;
+    position: relative;
+    top: -20px;
     padding: 40px;
     background: #f7bf50;
     font-size: 30px;
+    border-radius: 20px;
+}
+
+.header img{
+    display: none;
+    cursor: pointer;
 }
 
 /* resoponsiv til tablet */
@@ -94,7 +127,7 @@ body {
 
    .img-info h2{
     padding: 20px 0px 0px;
-}
+    }
 
     .img-info-osl h2 {
     padding: 20px 0px 0px;
@@ -102,7 +135,7 @@ body {
 
     .img-info p{
     padding: 20px 0px 0px;
-}
+    }
 
     .img-info-osl p{
     padding: 20px 0px 0px;
@@ -110,9 +143,15 @@ body {
 
     .img-bgo{
     padding-top: 30px;
-}
+    }
     .img-osl{
     padding-top: 30px;
+    }
+
+    .header img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -149,11 +188,13 @@ body {
 
     .img-bgo{
         padding-top: 0px;
+        padding-right: 10px;
         width: 50%;
         float: left;
     }
     .img-osl{
-        padding-top: 20px;
+        padding-top: 60px;
+        padding-left: 10px;
         width: 50%;
         float: right;
     }
@@ -194,7 +235,7 @@ body {
 }
 
 #leftMenu a:hover {
-    color: #fff;
+    color: #000;
     background: #f7bf50;
 }
 
@@ -223,8 +264,9 @@ body {
     text-align: center;
 }
 
-/* meny trekt ut */ 
+/* tabell */ 
 
+/*
 table td,
 th,
 tr {
@@ -232,6 +274,7 @@ tr {
     background-color: #f7bf50;
     color: Black;
 }
+*/
 
 ul {
     margin-left: auto;
@@ -245,10 +288,6 @@ ul {
     text-align: center;
 }
 
-.topp {
-    text-align: left;
-}
-
 ul.myUL {
     display: inline-block;
     text-align: left;
@@ -260,8 +299,9 @@ ul.myUL {
     background-color: #f7bf50;
     color: #000;
     padding: 20px 40px;
-    border-radius: 4px;
+    border-radius: 100px;
     border-color: #fff;
+    cursor: pointer;
 }
 
 #medlemknapp {
@@ -285,4 +325,13 @@ input[type=text], input[type=password] {
 .registrer {
     padding: 16px;
     text-align: center;
+}
+
+#myBtn {
+    background-color:#f1f1f1; 
+    color:black; 
+    width:150px; 
+    height: 50px; 
+    border-radius: 5px;
+    cursor: pointer;
 }
